@@ -1,3 +1,70 @@
 .intro{
-    background-color: pink;
+    background-color: white;
+    display: flex;
+}
+
+.introLeft{
+    flex: 0.5;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+
+.introRight{
+    flex: 0.5;
+}
+
+.imgContainer{
+    width: 700px;
+    height: 700px;
+    overflow: hidden;
+    background-color: crimson;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    float: left;
+    border-radius: 50%;
+}
+
+img{
+    height: 90%;
+}
+
+.introWrapper{
+    width: 100%;
+    height: 100%;
+    padding-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1{
+    font-size: 60px;
+    margin: 10px 0;
+}
+
+h2{
+font-size: 35px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+.arrowContainer{
+    position: absolute;
+    bottom: 10px;
+}
+
+.arrow{
+    width: 30px;
+    left: 50%;
+    animation: arrowBlink 2s infinite;
+}
+
+@keyframes arrowBlink {
+    100%{
+        opacity: 0;
+    }
 }
