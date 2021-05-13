@@ -1,3 +1,65 @@
 .works{
-    background-color: lightgreen;
+    background-color: orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.arrow-slider {
+    height: 50px;
+    position: absolute;
+    cursor: pointer;
+}
+.arrow-slider.left {
+    left: 100px;
+    transform: rotateY(180deg);
+}
+.arrow-slider.right {
+    right: 200px;
+}
+
+.slider{
+    height: 350px;
+    display: flex;
+    position: absolute;
+    left: 0;
+}
+
+.slider-container{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-item{
+    width: 700px;
+    height: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-left{
+    flex: 6;
+    height: 100%;
+}
+
+.slider-right{
+    flex: 8;
+    height: 60%;
+}
+
+.reconart{
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-140%, -50%);
 }

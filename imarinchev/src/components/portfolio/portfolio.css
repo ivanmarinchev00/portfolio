@@ -21,8 +21,8 @@
     flex-wrap: wrap;
 }
 .portfolio .container .item {
-    width: 220px;
-    height: 150px;
+    width: 320px;
+    height: 250px;
     border-radius: 20px;
     border: 1px solid #f0efef;
     margin: 10px 20px;
@@ -34,9 +34,11 @@
     transition: all 0.5s ease;
     cursor: pointer;
 }
-.portfolio .container .item h3 {
+.portfolio .container .item a {
+    display: none;
     position: absolute;
     font-size: 20px;
+    
 }
 .portfolio .container .item img {
     overflow: hidden;
@@ -51,5 +53,10 @@
 .portfolio .container .item:hover img {
     opacity: 0.2;
     z-index: 0;
+}
+.portfolio .container .item:hover a {
+    display: initial;
+    color: white;
+    text-decoration: none;
 }
 
