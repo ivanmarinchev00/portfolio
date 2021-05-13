@@ -2,7 +2,6 @@ import "./portfolio.css";
 import { useEffect, useState } from "react";
 import PortfolioList from "../portfolioList/PortfolioList";
 import {
-    featuredPortfolio,
     webPortfolio,
     mobilePortfolio,
     designPortfolio,
