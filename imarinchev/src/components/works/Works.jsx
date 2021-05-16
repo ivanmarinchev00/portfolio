@@ -11,7 +11,7 @@ export default function Works() {
           id: "1",
           logo: "../assets/reconart-social-logo.png",
           title: "ReconArt",
-          role: "Frontend Developer Intern",
+          role: "Role: Frontend Developer Intern",
           class: "reconart",
           period: "03.2021-08.2021",
           desc:
@@ -21,7 +21,7 @@ export default function Works() {
           id: "2",
           logo: "../assets/fontys-logo.png",
           title: "Fontys University of Applied Sciences",
-          role:"Student",
+          role:"Role: Student",
           class: "fontys",
           period: "08.2019-06.2023",
           desc:
@@ -29,8 +29,9 @@ export default function Works() {
         },
         {
           id: "3",
-          logo: "../assets/coming-soon.jpeg",
+          logo: "../assets/coming-soon.png",
           title: "Your company?",
+          class: "tba",
           period: "09.2021-02.2022",
           desc:
             "TBA",
@@ -40,7 +41,7 @@ export default function Works() {
       useEffect(()=> {
             if (currentSlide === 1) setCurrentLogo("../assets/fontys-logo.png")
             else if (currentSlide === 0) setCurrentLogo("../assets/reconart-social-logo.png");
-            else if (currentSlide === 2) setCurrentLogo("../assets/coming-soon.jpeg");
+            else if (currentSlide === 2) setCurrentLogo("../assets/coming-soon.png");
       }, [currentSlide])
 
 
