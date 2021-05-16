@@ -25,6 +25,8 @@
     display: flex;
     position: absolute;
     left: 0;
+    transition: all 1s ease-out;
+
 }
 
 .slider-container{
@@ -45,13 +47,16 @@
 }
 
 .slider-left{
-    flex: 6;
+    flex: 8;
     height: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .slider-right{
-    flex: 8;
-    height: 60%;
+    flex: 6;
+    height: 80%;
+    margin-top: 8%;
 }
 
 .reconart{
@@ -59,7 +64,23 @@
     width: 200px;
     height: 200px;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-140%, -50%);
+    top: 20%;
+    left: 11%;
+    align-items: center;
+    justify-content: center;
+    /* transform: translate(-140%, -50%); */
 }
+
+.fontys{
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    transform: translate(40%, 40%);
+}
+
+.new-line {
+    white-space: pre-line;
+  }
