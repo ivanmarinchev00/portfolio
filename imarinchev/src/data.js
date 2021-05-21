@@ -36,9 +36,10 @@
     },
     {
       id: 3,
-      title: "Mobile E-commerce Design",
+      title: "Fisherr",
       img:
-        "https://cdn.dribbble.com/users/1998175/screenshots/15459384/media/48ac2b43ebe81ba0866afea1383cc939.png?compress=1&resize=1200x900",
+        "https://www.linkpicture.com/q/Fisherr_4.png",
+        href: "https://github.com/ivanmarinchev00/android-specialization-projects"
     },
   ];
   
