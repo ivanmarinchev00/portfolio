@@ -1,62 +1,86 @@
 .portfolio {
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .portfolio h1 {
-    font-size: 50px;
+  font-size: 50px;
 }
 .portfolio ul {
-    margin: 10px;
-    padding: 0;
-    list-style: none;
-    display: flex;
+  margin: 10px;
+  padding: 0;
+  list-style: none;
+  display: flex;
 }
 .portfolio .container {
-    width: 70%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .portfolio .container .item {
-    width: 320px;
-    height: 250px;
-    border-radius: 20px;
-    border: 1px solid #f0efef;
-    margin: 10px 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    position: relative;
-    transition: all 0.5s ease;
-    cursor: pointer;
+  width: 320px;
+  height: 250px;
+  border-radius: 20px;
+  border: 1px solid #f0efef;
+  margin: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  position: relative;
+  transition: all 0.5s ease;
+  cursor: pointer;
 }
 .portfolio .container .item a {
-    display: none;
-    position: absolute;
-    font-size: 20px;
-    
+  display: none;
+  position: absolute;
+  font-size: 20px;
 }
 .portfolio .container .item img {
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-    object-fit: scale-down;
-    z-index: 1;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  object-fit: scale-down;
+  z-index: 1;
 }
 .portfolio .container .item:hover {
-    background-color: black;
+  background-color: black;
 }
 .portfolio .container .item:hover img {
-    opacity: 0.2;
-    z-index: 0;
+  opacity: 0.2;
+  z-index: 0;
 }
 .portfolio .container .item:hover a {
-    display: initial;
-    color: white;
-    text-decoration: none;
+  display: initial;
+  color: white;
+  text-decoration: none;
 }
 
+@media (max-width: 768px) {
+    .portfolio h1 {
+    font-size: 20px;
+    height: 8%;
+  }
+
+  .portfolio ul{
+      margin: 10px 0;
+      flex-wrap: wrap;
+      justify-content: center;
+      height: 20%;
+      
+  }
+
+  .portfolio .container{
+      width: 100%;
+  }
+
+  .portfolio .container .item{
+      width: 130px;
+      height: 100px;
+  }
+
+
+}
