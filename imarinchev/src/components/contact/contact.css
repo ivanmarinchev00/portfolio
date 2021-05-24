@@ -53,3 +53,19 @@
 .contact .contactRight form span {
     color: green;
 }
+
+@media (max-width: 768px){
+.contact{
+    flex-direction: column;
+}
+
+.contact .contactRight form input{
+    width: 210px;
+    height: 30px;
+}
+
+.contact .contactRight form textarea{
+    width: 200px;
+    height: 100px;
+}
+}

@@ -1,90 +1,106 @@
-.works{
-    background-color: orange;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.works {
+  background-color: orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    position: relative;
+  position: relative;
 }
 
 .arrow-slider {
-    height: 50px;
-    position: absolute;
-    cursor: pointer;
+  height: 50px;
+  position: absolute;
+  cursor: pointer;
 }
 .arrow-slider.left {
-    left: 100px;
-    transform: rotateY(180deg);
+  left: 100px;
+  transform: rotateY(180deg);
 }
 .arrow-slider.right {
-    right: 200px;
+  right: 200px;
 }
 
-.slider{
-    height: 350px;
-    display: flex;
-    position: absolute;
-    left: 0;
-    transition: all 1s ease-out;
-
+.slider {
+  height: 350px;
+  display: flex;
+  position: absolute;
+  left: 0;
+  transition: all 1s ease-out;
 }
 
-.slider-container{
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.slider-container {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.slider-item{
-    width: 700px;
-    height: 100%;
-    background-color: #fff;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.slider-item {
+  width: 700px;
+  height: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.slider-left{
-    flex: 8;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
+.slider-left {
+  flex: 8;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
 }
 
-.slider-right{
-    flex: 6;
-    height: 80%;
-    margin-top: 8%;
+.slider-right {
+  flex: 6;
+  height: 80%;
+  margin-top: 8%;
 }
 
-.reconart{
-    overflow: hidden;
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    top: 20%;
-    left: 11%;
-    align-items: center;
-    justify-content: center;
-    /* transform: translate(-140%, -50%); */
+.reconart {
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 20%;
+  left: 11%;
+  align-items: center;
+  justify-content: center;
+  /* transform: translate(-140%, -50%); */
 }
 
-.fontys{
-    overflow: hidden;
-    width: 200px;
-    height: 200px;
-    position: absolute;
-    align-items: center;
-    justify-content: center;
-    transform: translate(40%, 40%);
+.fontys {
+  overflow: hidden;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  transform: translate(40%, 40%);
 }
 
 .new-line {
-    white-space: pre-line;
-  }
+  white-space: pre-line;
+}
 
-  .tba{
-      width: 100%;
-  }
+.tba {
+  width: 100%;
+}
+
+@media (max-width: 768px){
+    .arrow-slider.left {
+        display: none;
+      }
+      .arrow-slider.right {
+        display: none;
+      }
+
+      .reconart{
+          height: 150px;
+          width: 150px;
+          left: 2%;
+      }
+
+      
+}
